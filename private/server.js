@@ -30,7 +30,7 @@ app.post('/post-user', async (req, res) => {
     if (saveUser) {
         const mailBody = `<h1>Hello,</h1>
         <p>Thank you for registering with us. Bellow is out terms and conditions</p>
-        <a href="http://localhost:3000/static/media/_PUPs%20Terms.8a1ad854c36e0ec00c21.pdf" download="_PUPs Terms.pdf">Terms and conditions</a>
+        <a href="https://sassty.vercel.app/static/media/_PUPs%20Terms.8a1ad854c36e0ec00c21.pdf" download="_PUPs Terms.pdf">Terms and conditions</a>
         `
         sendMail(email, mailBody)
         res.json({ message: "User saved successfully" });
