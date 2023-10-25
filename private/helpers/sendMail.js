@@ -15,12 +15,7 @@ const sendMail = (email, mailBody) =>
       tls: {
         servername: "gmail.com",
       },
-      attachments: [
-        {
-          filename: "_PUPs Terms.pdf", // Use the original file name
-          path: __dirname + "/_PUPs Terms.pdf", // Get the file path from multer
-        },
-      ],
+
     });
 
     // write a function to send the mail
