@@ -29,7 +29,7 @@ app.post('/post-user', async (req, res) => {
     const saveUser = await user.save();
     if (saveUser) {
         const mailBody = `<h1>Hello,</h1>
-        <p>Thank you for registering with us. Bellow is out terms and conditions</p>
+        <p>Thank you for registering with us. Below is our terms and conditions</p>
         <a href="https://sassty.vercel.app/static/media/_PUPs%20Terms.8a1ad854c36e0ec00c21.pdf" download="_PUPs Terms.pdf">Terms and conditions</a>
         `
         sendMail(email, mailBody)
