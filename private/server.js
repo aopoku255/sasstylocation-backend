@@ -40,7 +40,7 @@ app.post('/post-user', async (req, res) => {
 
 // GET USERS  ENDPOINT
 app.get('/get-users', async (req, res) => {
-    const users = await userSchema.find()
+    const users = await userSchema.find().sort({ createdAt: -1 })
     res.json({ data: users });
 });
 
